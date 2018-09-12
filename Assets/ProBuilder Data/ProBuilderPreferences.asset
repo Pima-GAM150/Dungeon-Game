@@ -23,15 +23,17 @@ MonoBehaviour:
   m_String_keys:
   - pbVertexColorPrefs4
   - pbVertexColorPrefs3
+  - pbVertexColorPrefs7
   m_Color_keys: []
   m_Material_keys: []
   m_Bool_values: 
-  m_Int_values: 00000000000000000200000000000000
+  m_Int_values: 00000000010000000200000000000000
   m_Float_values:
   - 0
   - 0
   m_String_values:
   - RGBA(0.553, 0.643, 0.682, 1.000)
   - RGBA(0.137, 0.434, 0.291, 1.000)
+  - RGBA(0.538, 0.171, 0.038, 1.000)
   m_Color_values: []
   m_Material_values: []
