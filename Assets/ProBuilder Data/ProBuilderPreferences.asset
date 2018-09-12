@@ -21,9 +21,7 @@ MonoBehaviour:
   - pbEditorScroll.x
   - pbEditorScroll.y
   m_String_keys:
-  - pbVertexColorPrefs4
-  - pbVertexColorPrefs3
-  - pbVertexColorPrefs7
+  - pbVertexColorPrefs8
   m_Color_keys: []
   m_Material_keys: []
   m_Bool_values: 
@@ -32,8 +30,6 @@ MonoBehaviour:
   - 0
   - 0
   m_String_values:
-  - RGBA(0.553, 0.643, 0.682, 1.000)
-  - RGBA(0.137, 0.434, 0.291, 1.000)
-  - RGBA(0.538, 0.171, 0.038, 1.000)
+  - RGBA(0.368, 0.116, 0.019, 1.000)
   m_Color_values: []
   m_Material_values: []
