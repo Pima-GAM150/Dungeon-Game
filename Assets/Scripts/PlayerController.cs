@@ -34,5 +34,38 @@ public class PlayerController : MonoBehaviour
 
 			}
 		}
+		if (Input.GetMouseButtonDown(1))
+		{
+			Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+			RaycastHit hit;
+
+			if (Physics.Raycast(ray, out hit, 100, movementMask))
+			{
+				// Check if we clicked on an interactable
+				// If we did set it as our focus
+				
+
+			}
+		}
 	}
+
+	//void OnTriggerEnter (Collider col)
+	//{
+		
+			
+			//if (GetComponent.GameObject.roof.SetActive = true)
+			//{s
+			//	roof.SetActive = false;
+			//}
+			
+			//else 
+			//{
+			//	roof.SetActive = true;
+			//}
+			
+		
+
+
+
+	//}
 }
