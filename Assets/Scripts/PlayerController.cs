@@ -49,23 +49,5 @@ public class PlayerController : MonoBehaviour
 		}
 	}
 
-	//void OnTriggerEnter (Collider col)
-	//{
-		
-			
-			//if (GetComponent.GameObject.roof.SetActive = true)
-			//{s
-			//	roof.SetActive = false;
-			//}
-			
-			//else 
-			//{
-			//	roof.SetActive = true;
-			//}
-			
-		
-
-
-
-	//}
+	
 }

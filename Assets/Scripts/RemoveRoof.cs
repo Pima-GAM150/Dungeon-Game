@@ -12,15 +12,26 @@ public class RemoveRoof : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		if (disabled)
-		{
-			roof.SetActive(false);
-		}
-		else
-		{
-			roof.SetActive(true);
+	void OnTriggerExit (Collider col)
+	{
+		
+			
+			if (col.gameObject.name == "Player")
+			{
+				Vector3 relativePos = transform.InverseTransformPoint(col.transform.position);
+				if (relativePos.z > 0)
+				{
+					roof.SetActive(true);
+				}
+				else 
+				{
+					roof.SetActive(false);
+				}
+			}
+	}		
+			
+		
 
-		}
+
+
 	}
-}
