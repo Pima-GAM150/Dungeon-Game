@@ -1,11 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
+
 
 public class HealthBar : MonoBehaviour {
+    public Image healthBar;
+    public float damageTaken;
 
-	// Use this for initialization
-	void Start () {
+
+
+    void Start () {
 		
 	}
 	
@@ -13,4 +19,9 @@ public class HealthBar : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    public void takeDMG(float healthLeftPercent)
+    {
+        healthBar.fillAmount = healthLeftPercent;
+    }
 }
