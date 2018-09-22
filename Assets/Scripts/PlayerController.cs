@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
 	public LayerMask movementMask;
 	public PlayerMotor motor;
 	public Camera cam;
-
+	
 	// Use this for initialization
 	void Start ()
 	{
