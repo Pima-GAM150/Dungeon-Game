@@ -62972,8 +62972,9 @@ GameObject:
   - component: {fileID: 1170709566}
   - component: {fileID: 1170709567}
   - component: {fileID: 1170709568}
+  - component: {fileID: 1170709569}
   m_Layer: 0
-  m_Name: AttackAura
+  m_Name: Right Gate Guard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62985,13 +62986,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1170709564}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 41, y: -3, z: 28.26}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1658357665}
-  m_Father: {fileID: 1876262232}
-  m_RootOrder: 6
+  - {fileID: 1876262232}
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &1170709566
 SphereCollider:
@@ -63032,6 +63034,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1460875886}
+--- !u!114 &1170709569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1170709564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1976dc25506c145adb9a6926dd1eba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
 --- !u!1001 &1177095014
 Prefab:
   m_ObjectHideFlags: 0
@@ -73213,6 +73227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91452f0f0c3b12c47a1f28e286a4dfb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  focus: {fileID: 0}
   movementMask:
     serializedVersion: 2
     m_Bits: 512
@@ -95553,7 +95568,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1658357665
 Transform:
   m_ObjectHideFlags: 0
@@ -107154,9 +107169,9 @@ Transform:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1876262230}
-  m_LocalRotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 41, y: -3, z: 28.26}
-  m_LocalScale: {x: 0.50000024, y: 0.5, z: 0.50000024}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5000005, y: 0.5, z: 0.5000005}
   m_Children:
   - {fileID: 1388069482}
   - {fileID: 1717759846}
@@ -107164,9 +107179,8 @@ Transform:
   - {fileID: 933626936}
   - {fileID: 611451676}
   - {fileID: 1068844030}
-  - {fileID: 1170709565}
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_Father: {fileID: 1170709565}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!135 &1876262233
 SphereCollider:
@@ -107272,7 +107286,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-324632
+  m_Name: pb_Mesh13904
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
