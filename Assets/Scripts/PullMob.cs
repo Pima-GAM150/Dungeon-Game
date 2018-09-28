@@ -5,12 +5,16 @@ using UnityEngine;
 public class PullMob : MonoBehaviour {
 
 	public GameObject target;
+	public GameObject damageAura;
 	
 	private bool attackPlayer;
-
+	public Damage damage;
+	
 	// Use this for initialization
 	void Start () {
 		attackPlayer = false;
+		damage = damageAura.GetComponent<Damage>();
+		
 	}
 	
 	void update () 
@@ -28,8 +32,11 @@ public class PullMob : MonoBehaviour {
 			
 			if (col.gameObject.name == "Player")
 			{
+				target = col.gameObject;
 				attackPlayer = true;
-				Debug.Log ("I hit");
+				
+				
+
 			}
 	}
 
@@ -39,8 +46,9 @@ public class PullMob : MonoBehaviour {
 			
 			if (col.gameObject.name == "Player")
 			{
+				target = null;
 				attackPlayer = false;
-				Debug.Log ("I am leaving it alone");
+				
 			}
 	}
 }
